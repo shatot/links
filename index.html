@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShaToT | Ahmed Samy</title>
+  <!-- Normalize File -->
+  <link rel="stylesheet" href="./assets/css/normalize.css" />
+  <!-- Css File-->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap"
+    rel="stylesheet"
+      />
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="container">
+        <div class="box">
+          <div class="image">
+            <img src="https://avatar.iran.liara.run/public/32" alt="Ahmed Samy">
+          </div>
+          <div class="info">
+            <h1>Ahmed Samy | احمد سامي</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Optio quaerat impedit aut sit? Dolor natus repellat eligendi!
+              Rem quas ipsa incidunt eius fugiat, nobis officiis quia, rerum commodi vel iusto.
+            </p>
+          </div>
+          <div class="social-links">
+            <h1>Social Links </h1>
+            <ul>
+              <div class="row">
+                <li>
+                  <span class="icon" style="color: var(--colorFb);">
+                    <i class="fa-brands fa-facebook"></i>
+                  </span>
+                  <a href="https://www.facebook.com" target="_blank">Facebook</a> 
+                  <span class="copy"><i class="fa-solid fa-copy"></i></span> 
+                </li>
+                <li>
+                  <span class="icon" style="color: var(--colorIns);" ><i class="fa-brands fa-instagram"></i></span>
+                  <a href="https://www.instagram.com/" target="_blank">Instagram</a> 
+                  <span class="copy"><i class="fa-solid fa-copy"></i></span> 
+                </li>
+              </div>
+              <div class="row">
+                <li>
+                  <span class="icon" style="color: var(--colorYou);"><i class="fa-brands fa-youtube"></i></span>
+                  <a href="https://www.youtube.com/" target="_blank">Youtube</a> 
+                  <span class="copy"><i class="fa-solid fa-copy"></i></span> 
+                </li>
+                <li>
+                  <span class="icon" style="color: var(--colorTik);"><i class="fa-brands fa-tiktok"></i></span>
+                  <a href="https://www.tiktok.com/ar" target="_blank">Tiktok</a> 
+                  <span class="copy"><i class="fa-solid fa-copy"></i></span> 
+                </li>
+              </div>
+              <div class="row">
+              <li>
+                <span class="icon" style="color: var(--colorWa);"><i class="fa-brands fa-whatsapp"></i></span>
+                <a href="https://api.whatsapp.com/send/?phone=01110649108" target="_blank">WhatsApp</a> 
+                <span class="copy"><i class="fa-solid fa-copy"></i></span> 
+              </li>
+              <li>
+                <span class="icon" style="color: var(--colorTw);"><i class="fa-brands fa-twitter"></i></span>
+                <a href="https://twitter.com/" target="_blank">Twiter</a> 
+                <span class="copy"><i class="fa-solid fa-copy"></i></span> 
+              </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const copyButtons = document.querySelectorAll('.copy'); 
+    copyButtons.forEach((button) => {
+      button.addEventListener('click',(e) => {
+        let aLink = e.currentTarget.parentElement.children[1].href;
+        navigator.clipboard.writeText(aLink);
+
+        e.currentTarget.classList.add('copyed')
+      })
+    })
+  </script>
+</body>
+</html>
