@@ -143,7 +143,7 @@ ul {
   margin-left: 60px;
   transition: 0.5s;
 }
-.card .container .box .social-links ul .row li .copy::after {
+/* .card .container .box .social-links ul .row li .copy::after {
   content: 'Copy';
   position: absolute;
   top: -40px;
@@ -157,7 +157,7 @@ ul {
 }
 .card .container .box .social-links ul .row li .copy:hover::after {
   visibility: visible;
-}
+} */
 @media (max-width: 767px) {
   .card .container {
     margin-top: 0;
