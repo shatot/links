@@ -80,6 +80,7 @@ ul {
   padding: 5px;
   background-image: -webkit-linear-gradient(-135deg, var(--colorIns) 40%, var(--mainColor) 70%);
   border-radius: 50%;
+  overflow: hidden;
 }
 .card .container .box .image img {
   width: 100%;
